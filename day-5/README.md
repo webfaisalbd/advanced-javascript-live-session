@@ -101,7 +101,59 @@ console.log(myName, myAge, city, division);
 ```
 
 
+## Loop
 
 ```javascript
 
+
+// Loop 
+let array = [10, 20, 30, 100, 50, 75];
+
+// normal loop 
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+}
+
+// for of loop 
+for(const element of array){
+    console.log(element);
+}
+
+
+// for in loop 
+for(const element in array){
+    console.log(element);
+} 
+
+
+
+
+
+
+let object = {
+    a: 10,
+    b:20,
+    c:30
+}
+// object er moddhe for in loop
+for(const key in object){
+    console.log(key); // we got object property, not object value
+} 
+
+
+
+for(const key in object){
+    console.log(object[key]); // now we got object value
+} 
+
+
+
+
+// object er moddhe for of loop
+for(const key of object){
+    console.log(key); // we get: Uncaught TypeError: object is not iterable
+} 
+
 ```
+
+
