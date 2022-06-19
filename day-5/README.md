@@ -150,10 +150,35 @@ for(const key in object){
 
 
 // object er moddhe for of loop
-for(const key of object){
-    console.log(key); // we get: Uncaught TypeError: object is not iterable
-} 
+// for(const key of object){
+//     console.log(key); // we get: Uncaught TypeError: object is not iterable
+// } 
 
 ```
+
+
+## Async await
+
+```javascript
+
+// async await 
+// without async await 
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+.then(response => response.json())
+.then(data => {
+    console.log(data)
+});
+
+// with async await 
+const getUser = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const data = await response.json();
+    console.log(data);
+}
+getUser();
+```
+
+
+
 
 
