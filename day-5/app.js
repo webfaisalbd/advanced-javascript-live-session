@@ -85,15 +85,15 @@ for (let i = 0; i < array.length; i++) {
 }
 
 // for of loop 
-for(const element of array){
+for (const element of array) {
     console.log(element);
 }
 
 
 // for in loop 
-for(const element in array){
+for (const element in array) {
     console.log(element);
-} 
+}
 
 
 
@@ -102,19 +102,19 @@ for(const element in array){
 
 let object = {
     a: 10,
-    b:20,
-    c:30
+    b: 20,
+    c: 30
 }
 // object er moddhe for in loop
-for(const key in object){
+for (const key in object) {
     console.log(key); // we got object property, not object value
-} 
+}
 
 
 
-for(const key in object){
+for (const key in object) {
     console.log(object[key]); // now we got object value
-} 
+}
 
 
 
@@ -131,10 +131,10 @@ for(const key in object){
 // async await 
 // without async await 
 fetch('https://jsonplaceholder.typicode.com/todos/1')
-.then(response => response.json())
-.then(data => {
-    console.log(data)
-});
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    });
 
 // with async await 
 const getUser = async () => {
@@ -143,5 +143,36 @@ const getUser = async () => {
     console.log(data);
 }
 getUser();
+
+
+
+
+// Object.is method
+const a = 10;
+const b = 20;
+const c = 10;
+
+console.log('a compare with b', Object.is(a, b));
+console.log('a compare with c', Object.is(a, c));
+
+
+// reference type 
+const d = [1, 2];
+const e = [1, 2];
+
+console.log('d object compare with e object: ', Object.is(d, e));
+
+
+
+// reference type 
+const f = [];
+const g = [];
+
+console.log('f object compare with g object: ', Object.is(f, g));
+
+
+
+
+
 
 

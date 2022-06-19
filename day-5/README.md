@@ -179,6 +179,38 @@ getUser();
 ```
 
 
+## Object.is method
+
+```javascript
+
+
+// Object.is method
+const a = 10;
+const b = 20;
+const c = 10;
+
+console.log('a compare with b', Object.is(a, b));
+console.log('a compare with c', Object.is(a, c));
+
+
+// reference type 
+const d = [1, 2];
+const e = [1, 2];
+
+console.log('d object compare with e object: ', Object.is(d, e));
+
+
+
+// reference type 
+const f = [];
+const g = [];
+
+console.log('f object compare with g object: ', Object.is(f, g));
+
+
+```
+
+
 
 
 
