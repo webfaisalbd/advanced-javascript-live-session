@@ -40,7 +40,20 @@ let idFunction = () => 3;
 let url2 = `https://jsonplaceholder.typicode.com/todos/${idFunction()}`
 console.log('second url: ',url2);
 
-// template string 
+// without template string 
 let myId = 5;
 let myUrl = 'https://jsonplaceholder.typicode.com/todos/' + myId;
 console.log('third url: ',myUrl);
+
+
+// destructuring in array 
+const arr = [1,2,3,4,5];
+
+const [first,second, , ,fifth]  = arr;
+console.log(first);
+console.log(second);
+console.log(fifth);
+
+// taking last element of an array
+const arr2 = [10,20,33,22,11,44,33,55,24,22,25,24,21,65,43,22,12,56,32,11]; 
+console.log('last element of an array: ',arr2[arr2.length-1]);
