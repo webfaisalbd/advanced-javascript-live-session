@@ -81,6 +81,27 @@ console.log('last element of an array: ',arr2[arr2.length-1]);
 
 
 
+
+## Destructuring in object
+```javascript
+
+
+const demoObj = {
+    myName: 'faisal',
+    age: 26,
+    id: 161,
+    address: {
+        city: 'savar',
+        division: 'dhaka'
+    }
+}
+const { myName, age: myAge, address: { city, division } } = demoObj;
+// age variable er name ta change kore myAge disi, eita k bole alias. 
+console.log(myName, myAge, city, division);
+```
+
+
+
 ```javascript
 
 ```
