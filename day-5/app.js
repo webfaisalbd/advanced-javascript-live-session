@@ -202,3 +202,22 @@ console.log(mergedObj);
 
 
 
+
+// Set 
+// set always gives unique values
+const demoSet = new Set();
+demoSet.add(1);
+demoSet.add(2);
+demoSet.add(1);
+console.log('Unique value: ', demoSet);
+
+const duplicates = [1, 1, 2, 3, 4, 2, 5, 3, 4];
+const set = new Set([...duplicates]);
+// removing element from an array
+set.delete(2);
+console.log('Unique array: ', set);
+// total size of an array 
+console.log('total size of an array: ',set.size);
+// key te kono value ase kina
+console.log('set e 1  value ase kina: ',set.has(1));
+
