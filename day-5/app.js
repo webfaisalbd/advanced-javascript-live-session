@@ -15,3 +15,15 @@ console.log(add2(20,10));
 const add3 = x => x+x;
 console.log(add3(20));
 
+
+// optional chaining 
+const person = {
+    name: 'Faisal',
+    age: 26,
+
+    address: {
+        city: 'Dhaka',
+        division: 'Dhaka'
+    }
+}
+console.log(person.address?.city);
