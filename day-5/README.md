@@ -213,4 +213,37 @@ console.log('f object compare with g object: ', Object.is(f, g));
 
 
 
+## Spread Operator
+
+```javascript
+
+
+// Spread Operator
+// Spread Operator in array
+let array1 = [10, 20, 30];
+let array2 = [...array1, 50, 70, 90];
+
+console.log('Spread Operator: ', array2);
+
+
+// without spread , using concat 
+let array3 = [5, 6, 7];
+array1 = array1.concat(array3);
+console.log('array1 concat with array3: ', array1);
+
+
+// Spread Operator in Object
+let obj1 = { foo: 'bar', x: 42 };
+let obj2 = { foo: 'baz', y: 13 };
+
+let mergedObj = { ...obj1, ...obj2 };
+console.log(mergedObj);
+// output : {foo: 'baz', x: 42, y: 13}
+
+
+```
+
+
+
+
 
