@@ -516,6 +516,17 @@ const everyOutput = arrayOfObject1.every((el)=>{
 })
 console.log('See every output: ',everyOutput);
 
+
+// another example of every method 
+const numbers = [10, 20, 25, 30, 40];
+const everyResult = numbers.every((el) => {
+    return el % 2 == 0;
+})
+console.log("every Result: ",everyResult);
+// output false asbe, karon , sob gula even number na.
+// 25 odd number.
+// every er jonno sob gulai true hoya lagbe.
+
 ```
 
 
@@ -545,6 +556,15 @@ const someOutput = myArrayOfObject.some((el) => {
     return el.isCompleted == true;
 })
 console.log('See some output: ', someOutput);
+
+
+// another example of some method 
+const myNumbers = [10, 20, 25, 30, 40];
+const someResult = myNumbers.some((el) => {
+    return el % 2 == 0;
+})
+console.log("some Result: ",someResult);
+// output true asbe, karon , ekta condition true hoilei hoilo. 
 
 ```
 
