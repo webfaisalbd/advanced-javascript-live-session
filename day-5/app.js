@@ -368,3 +368,33 @@ const findOutput2 = demoArray3.find((ele) => {
 });
 console.log('find another example: ', findOutput2);
 
+
+
+
+
+
+// findIndex
+// findIndex o array dey na. just index dey. first e j element er jonno condition meet kore, sei element er index dey.
+// first e j condition meet kore , shudu tar tai diye dey. Ekadik thakleyo lav nai. 
+const arrayOfObject = [{
+    id: 1,
+    title: 'something',
+    isCompleted: false
+}, {
+    id: 2,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 3,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 4,
+    title: 'something',
+    isCompleted: false
+}]
+
+const todoIndex = arrayOfObject.findIndex((ele)=>{
+    return ele.isCompleted == false;
+})
+console.log('todoIndex: ',todoIndex);
