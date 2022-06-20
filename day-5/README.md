@@ -329,21 +329,13 @@ console.log(Object.entries(obj3));
 
 
 
-
 ## Array er kichu method
-```javascript
-
-// Array er kichu method
-const demoArray = [10, 20, 23, 30, 40];
-
-```
-
-
 
 ## forEach
 ```javascript
+const demoArray = [10, 20, 23, 30, 40];
 // forEach
-// kono kisu return kore na
+// kono kisu return kore na, tai kono array o dey na
 // demoArray.forEach((element, index, wholeArray ) => {
 //     console.log(element, index, wholeArray);
 // })
@@ -351,6 +343,23 @@ const demoArray = [10, 20, 23, 30, 40];
 demoArray.forEach((ele) => {
     console.log("Square of : "+ ele + ' is ' + ele*ele);
 })
+
+```
+
+
+## map 
+```javascript
+// map 
+const demoArray1 = [10, 20, 23, 30, 40];
+// array return kore , tai alada kore push kora lage na.
+// Normally korle, for loop kora lagto, and ekta empty array neya lagto, seikhane data push kora lagto.
+// But map use koray, extra array neya lage nai, kono kisu push o kora lage nai.
+// new array dorkar porle map use korbo.
+const mapOutput = demoArray1.map((ele)=>{
+    return ele*2;
+})
+console.log('Double of input: ', mapOutput);
+
 
 ```
 
