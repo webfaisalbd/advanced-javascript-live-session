@@ -236,7 +236,7 @@ map.set(1, '11'); // eikhane 1 hosse key, r value hosse 11
 map.set([1, 2, 3], false);
 map.set(() => { }, [2, 4, 6]);
 
-console.log('See the Map() :',map);
+console.log('See the Map() :', map);
 
 
 
@@ -248,7 +248,7 @@ console.log('See the Map() :',map);
 const obj3 = {
     name: 'Faisal',
     age: 25
-} 
+}
 console.log(Object.values(obj3));
 
 
@@ -261,3 +261,19 @@ console.log(Object.keys(obj3));
 // Object.entries
 console.log(Object.entries(obj3));
 
+
+
+
+
+// Array er kichu method
+const demoArray = [10, 20, 23, 30, 40];
+
+
+// forEach
+// demoArray.forEach((element, index, wholeArray ) => {
+//     console.log(element, index, wholeArray);
+// })
+
+demoArray.forEach((ele) => {
+    console.log("Square of : "+ ele + ' is ' + ele*ele);
+})

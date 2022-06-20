@@ -327,9 +327,36 @@ console.log(Object.entries(obj3));
 
 
 
-## 
+
+
+
+## Array er kichu method
 ```javascript
 
+// Array er kichu method
+const demoArray = [10, 20, 23, 30, 40];
+
+```
+
+
+
+## forEach
+```javascript
+// forEach
+// kono kisu return kore na
+// demoArray.forEach((element, index, wholeArray ) => {
+//     console.log(element, index, wholeArray);
+// })
+
+demoArray.forEach((ele) => {
+    console.log("Square of : "+ ele + ' is ' + ele*ele);
+})
+
+```
+
+
+## 
+```javascript
 
 
 ```
