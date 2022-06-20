@@ -276,7 +276,7 @@ const demoArray = [10, 20, 23, 30, 40];
 // })
 
 demoArray.forEach((ele) => {
-    console.log("Square of : "+ ele + ' is ' + ele*ele);
+    console.log("Square of : " + ele + ' is ' + ele * ele);
 })
 
 
@@ -288,7 +288,45 @@ const demoArray1 = [10, 20, 23, 30, 40];
 // Normally korle, for loop kora lagto, and ekta empty array neya lagto, seikhane data push kora lagto.
 // But map use koray, extra array neya lage nai, kono kisu push o kora lage nai.
 // new array dorkar porle map use korbo.
-const mapOutput = demoArray1.map((ele)=>{
-    return ele*2;
+const mapOutput = demoArray1.map((ele) => {
+    return ele * 2;
 })
 console.log('Double of input: ', mapOutput);
+
+
+
+
+
+// filter method
+const demoArray2 = [10, 20, 23, 30, 40];
+// filter er khetre, true return korle, j value er jonno true return korbe, sei value ta array te dibe.
+
+const filteredArray = demoArray2.filter((ele) => {
+    return ele % 2 == 0;
+})
+console.log('filtered Array: ', filteredArray);
+
+
+const todoArrayOfObj = [{
+    id: 1,
+    title: 'something',
+    isCompleted: false
+}, {
+    id: 2,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 3,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 4,
+    title: 'something',
+    isCompleted: false
+}]
+
+const todoFilterd = todoArrayOfObj.filter((elem)=>{
+    return elem.isCompleted == false;
+})
+console.log('todo Filterd: ',todoFilterd);
+
