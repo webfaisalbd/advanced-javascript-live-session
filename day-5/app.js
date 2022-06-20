@@ -398,3 +398,14 @@ const todoIndex = arrayOfObject.findIndex((ele)=>{
     return ele.isCompleted == false;
 })
 console.log('todoIndex: ',todoIndex);
+
+
+
+// includes
+// string er moddhe kono value ase kina, ta khojar jonno includes
+// value thakle true output dibe, r na thakle -1 output dibe.
+const stringArray = ['abc', '123', 'ab', 'abcd', 'xyz'];
+
+console.log('includes :',stringArray.includes('ab'));
+
+console.log('Another includes :',stringArray.includes('faisal'));
