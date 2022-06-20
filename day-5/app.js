@@ -409,3 +409,33 @@ const stringArray = ['abc', '123', 'ab', 'abcd', 'xyz'];
 console.log('includes :',stringArray.includes('ab'));
 
 console.log('Another includes :',stringArray.includes('faisal'));
+
+
+
+
+
+
+// every 
+// প্রত্যকটা condition er jonno সত্য  hole, true output dibe.
+// প্রত্যকটা condition er jonno সত্য na hole, false output dibe.
+const arrayOfObject1 = [{
+    id: 1,
+    title: 'something',
+    isCompleted: false
+}, {
+    id: 2,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 3,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 4,
+    title: 'something',
+    isCompleted: false
+}]
+const everyOutput = arrayOfObject1.every((el)=>{
+    return el.isCompleted == true;
+})
+console.log('See every output: ',everyOutput);
