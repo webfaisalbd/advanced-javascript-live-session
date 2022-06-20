@@ -239,3 +239,25 @@ map.set(() => { }, [2, 4, 6]);
 console.log('See the Map() :',map);
 
 
+
+
+// Object er kichu method
+
+
+// Object.values
+const obj3 = {
+    name: 'Faisal',
+    age: 25
+} 
+console.log(Object.values(obj3));
+
+
+
+// Object.keys
+console.log(Object.keys(obj3));
+
+
+
+// Object.entries
+console.log(Object.entries(obj3));
+

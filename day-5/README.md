@@ -300,6 +300,33 @@ console.log('See the Map() :',map);
 
 
 
+## Object methods:
+```javascript
+// Object er kichu method
+
+// Object.values
+const obj3 = {
+    name: 'Faisal',
+    age: 25
+} 
+console.log(Object.values(obj3));
+
+
+
+// Object.keys
+console.log(Object.keys(obj3));
+
+
+
+// Object.entries
+console.log(Object.entries(obj3));
+
+
+
+```
+
+
+
 ## 
 ```javascript
 
