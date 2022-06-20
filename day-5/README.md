@@ -273,3 +273,39 @@ console.log('set e 1  value ase kina: ',set.has(1));
 
 
 
+
+
+## Map
+```javascript
+
+
+
+// Map
+// normally, amra object er key hisebe kono number type/function/Object/array rakhte pari na. 
+// amra object er value ei dhoroner data type rakhte pari. kintu key hisebe pari na.
+// Tai jodi amader emon typer data k key hisebe rakhte chai, tokhon amader Map() use korte hobe. 
+
+const map = new Map();
+map.set(1, '11'); // eikhane 1 hosse key, r value hosse 11
+map.set([1, 2, 3], false);
+map.set(() => { }, [2, 4, 6]);
+
+console.log('See the Map() :',map);
+
+
+
+
+```
+
+
+
+
+## 
+```javascript
+
+
+
+```
+
+
+
