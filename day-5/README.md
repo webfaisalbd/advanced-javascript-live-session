@@ -519,6 +519,37 @@ console.log('See every output: ',everyOutput);
 ```
 
 
+## some
+```javascript
+// some 
+// যে কোনো একটা  condition er jonno সত্য  hole, true output dibe.
+
+const myArrayOfObject = [{
+    id: 1,
+    title: 'something',
+    isCompleted: false
+}, {
+    id: 2,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 3,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 4,
+    title: 'something',
+    isCompleted: false
+}]
+const someOutput = myArrayOfObject.some((el) => {
+    return el.isCompleted == true;
+})
+console.log('See some output: ', someOutput);
+
+```
+
+
+
 ## 
 ```javascript
 

@@ -394,10 +394,10 @@ const arrayOfObject = [{
     isCompleted: false
 }]
 
-const todoIndex = arrayOfObject.findIndex((ele)=>{
+const todoIndex = arrayOfObject.findIndex((ele) => {
     return ele.isCompleted == false;
 })
-console.log('todoIndex: ',todoIndex);
+console.log('todoIndex: ', todoIndex);
 
 
 
@@ -406,9 +406,9 @@ console.log('todoIndex: ',todoIndex);
 // value thakle true output dibe, r na thakle -1 output dibe.
 const stringArray = ['abc', '123', 'ab', 'abcd', 'xyz'];
 
-console.log('includes :',stringArray.includes('ab'));
+console.log('includes :', stringArray.includes('ab'));
 
-console.log('Another includes :',stringArray.includes('faisal'));
+console.log('Another includes :', stringArray.includes('faisal'));
 
 
 
@@ -435,7 +435,46 @@ const arrayOfObject1 = [{
     title: 'something',
     isCompleted: false
 }]
-const everyOutput = arrayOfObject1.every((el)=>{
+const everyOutput = arrayOfObject1.every((el) => {
     return el.isCompleted == true;
 })
-console.log('See every output: ',everyOutput);
+console.log('See every output: ', everyOutput);
+
+
+
+
+
+
+
+
+
+
+// some 
+// যে কোনো একটা  condition er jonno সত্য  hole, true output dibe.
+
+const myArrayOfObject = [{
+    id: 1,
+    title: 'something',
+    isCompleted: false
+}, {
+    id: 2,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 3,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 4,
+    title: 'something',
+    isCompleted: false
+}]
+const someOutput = myArrayOfObject.some((el) => {
+    return el.isCompleted == true;
+})
+console.log('See some output: ', someOutput);
+
+
+
+
+
