@@ -570,6 +570,31 @@ console.log("some Result: ",someResult);
 
 
 
+## flat 
+```javascript
+// flat 
+// flat nested array er khetre, 1 level porjonto jaite pare.
+//  1 level er besi jawar jonno bole dite hoy. Jemon: flat(2);
+// 1 level/ Tar besi jawar jonno Infinity bole deya jay. Jemon: flat(Infinity);
+const nested = [1,2,[3,4],5];
+const flatArray = nested.flat();
+console.log('myFlat :', flatArray);
+
+// second level nested 
+const nested1 = [1,2,[3,4,[5,6,7]],8];
+const myflatArray = nested1.flat(2);
+console.log('myflatArray :', myflatArray);
+
+
+// many level nested 
+const nested3 = [1,2,[3,4,[5,6,[7,8,9,[10,11]],12]],13];
+const moreflatArray = nested3.flat(Infinity);
+console.log('moreflatArray :', moreflatArray);
+
+```
+
+
+
 ## 
 ```javascript
 
