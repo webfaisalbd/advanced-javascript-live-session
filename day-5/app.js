@@ -325,8 +325,46 @@ const todoArrayOfObj = [{
     isCompleted: false
 }]
 
-const todoFilterd = todoArrayOfObj.filter((elem)=>{
+const todoFilterd = todoArrayOfObj.filter((elem) => {
     return elem.isCompleted == false;
 })
-console.log('todo Filterd: ',todoFilterd);
+console.log('todo Filterd: ', todoFilterd);
+
+
+
+
+
+
+// find method
+// find method kono array return kore na
+// Because find method e first e j condition meet kore, setar j element er jonno, sei element tai return kore.
+const anotherArrayOfObj = [{
+    id: 1,
+    title: 'something',
+    isCompleted: false
+}, {
+    id: 2,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 3,
+    title: 'something',
+    isCompleted: true
+}, {
+    id: 4,
+    title: 'something',
+    isCompleted: false
+}]
+
+const findOutput = anotherArrayOfObj.find((el) => {
+    return el.title = 'something';
+})
+console.log('find method output: ', findOutput);
+
+// another example 
+const demoArray3 = [10, 20, 23, 30, 40];
+const findOutput2 = demoArray3.find((ele) => {
+    return ele % 2 == 0;
+});
+console.log('find another example: ', findOutput2);
 
