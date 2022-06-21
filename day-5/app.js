@@ -445,7 +445,7 @@ const numbers = [10, 20, 25, 30, 40];
 const everyResult = numbers.every((el) => {
     return el % 2 == 0;
 })
-console.log("every Result: ",everyResult);
+console.log("every Result: ", everyResult);
 // output false asbe, karon , sob gula even number na.
 // 25 odd number.
 // every er jonno sob gulai true hoya lagbe.
@@ -487,7 +487,7 @@ const myNumbers = [10, 20, 25, 30, 40];
 const someResult = myNumbers.some((el) => {
     return el % 2 == 0;
 })
-console.log("some Result: ",someResult);
+console.log("some Result: ", someResult);
 // output true asbe, karon , ekta condition true hoilei hoilo. 
 
 
@@ -500,17 +500,65 @@ console.log("some Result: ",someResult);
 // flat nested array er khetre, 1 level porjonto jaite pare.
 //  1 level er besi jawar jonno bole dite hoy. Jemon: flat(2);
 // 1 level/ Tar besi jawar jonno Infinity bole deya jay. Jemon: flat(Infinity);
-const nested = [1,2,[3,4],5];
+const nested = [1, 2, [3, 4], 5];
 const flatArray = nested.flat();
 console.log('myFlat :', flatArray);
 
 // second level nested 
-const nested1 = [1,2,[3,4,[5,6,7]],8];
+const nested1 = [1, 2, [3, 4, [5, 6, 7]], 8];
 const myflatArray = nested1.flat(2);
 console.log('myflatArray :', myflatArray);
 
 
 // many level nested 
-const nested3 = [1,2,[3,4,[5,6,[7,8,9,[10,11]],12]],13];
+const nested3 = [1, 2, [3, 4, [5, 6, [7, 8, 9, [10, 11]], 12]], 13];
 const moreflatArray = nested3.flat(Infinity);
 console.log('moreflatArray :', moreflatArray);
+
+
+
+
+
+// splice
+// array theke element delete or add korar jonno splice use kora hoy.
+// existing array k change kore fele.
+const niceArray = [10, 20, 30, 40, 50, 70];
+// splice er 3 ta value, new data add korte na caile, prothom 2 ta value dilei hobe. 
+// first value : kon position theke start hobe,
+// second value : koyta delete korte hobe,
+// third value : J data ta add korte hobe, sei data ta.
+console.log('splice example 1: ', niceArray.splice(0, 2));
+console.log('change hoyar por splice: ', niceArray);
+
+
+const niceArray1 = [10, 20, 30, 40, 50, 60];
+// zero index e new data add korar jonno 
+niceArray1.splice(0, 0, 70, 80);
+console.log('see add hoyar por, using splice: ', niceArray1);
+
+
+const niceArrayOfObject = [{
+    id: 1,
+    title: 'something',
+    isCompleted: false
+}, {
+    id: 2,
+    title: 'something',
+    isCompleted: true
+}
+]
+// first index e new data(array) add korar jonno 
+niceArrayOfObject.splice(1, 0, {
+    id: 3,
+    title: 'nothing',
+    isCompleted: true
+});
+console.log('see object add hoyar por, using splice: ',niceArrayOfObject);
+
+
+
+
+
+
+
+

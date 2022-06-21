@@ -595,6 +595,50 @@ console.log('moreflatArray :', moreflatArray);
 
 
 
+## splice
+```javascript
+// splice
+// array theke element delete or add korar jonno splice use kora hoy.
+// existing array k change kore fele.
+const niceArray = [10, 20, 30, 40, 50, 70];
+// splice er 3 ta value, new data add korte na caile, prothom 2 ta value dilei hobe. 
+// first value : kon position theke start hobe,
+// second value : koyta delete korte hobe,
+// third value : J data ta add korte hobe, sei data ta.
+console.log('splice example 1: ', niceArray.splice(0, 2));
+console.log('change hoyar por splice: ', niceArray);
+
+
+const niceArray1 = [10, 20, 30, 40, 50, 60];
+// zero index e new data add korar jonno 
+niceArray1.splice(0, 0, 70, 80);
+console.log('see add hoyar por, using splice: ', niceArray1);
+
+
+const niceArrayOfObject = [{
+    id: 1,
+    title: 'something',
+    isCompleted: false
+}, {
+    id: 2,
+    title: 'something',
+    isCompleted: true
+}
+]
+// first index e new data(array) add korar jonno 
+niceArrayOfObject.splice(1, 0, {
+    id: 3,
+    title: 'nothing',
+    isCompleted: true
+});
+console.log('see object add hoyar por, using splice: ',niceArrayOfObject);
+
+
+
+
+```
+
+
 ## 
 ```javascript
 
