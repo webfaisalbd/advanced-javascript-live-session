@@ -652,6 +652,25 @@ console.log("Main array(change hoy nai) after slice: ",sweetArray);
 ```
 
 
+## indexOf
+```javascript
+// indexOf
+// array te nai emon kisu indexOf korle, -1 asbe. 
+// jodi same value ekadik bar thake , tahole o indexOf shudu first er index tai dibe. find er moton. Jemon 23 dui bar ase.
+const goodArray = [10, 20, 23, 30, 40, 50, 60, 23, 65];
+console.log('23 value ta array er kon index e ase: ',goodArray.indexOf(23));
+
+// array te nai emon kisu indexOf korle, -1 asbe.
+console.log('25 value ta array er kon index e ase: ',goodArray.indexOf(25));
+
+
+// jodi same value ekadik bar thake , tahole o indexOf shudu first er index tai dibe. find er moton.
+// tar mane amra indexOf diye first index pelam.
+// tahole last index kivabe pabo ? ==> setar jonno lastIndexOf use korte hobe.
+
+```
+
+
 ## 
 ```javascript
 
