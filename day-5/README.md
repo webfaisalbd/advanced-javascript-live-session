@@ -639,6 +639,19 @@ console.log('see object add hoyar por, using splice: ',niceArrayOfObject);
 ```
 
 
+## slice
+```javascript
+// slice
+const sweetArray = [10, 20, 30, 40, 50, 60];
+// array theke element kete neyar jonno slice use kora hoy.
+// existing array k change kore na. main array change hoy na.
+console.log('j gula k kete nisi, using slice: ',sweetArray.slice(0,3));
+console.log("Main array(change hoy nai) after slice: ",sweetArray);
+
+
+```
+
+
 ## 
 ```javascript
 
