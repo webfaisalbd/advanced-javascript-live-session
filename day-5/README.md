@@ -801,3 +801,22 @@ console.log('check Array: ',checkArray);
 
 
 
+
+## String Methods
+```javascript
+// String Methods
+
+// toUpperCase()
+// it change old string 
+const message = 'Hello';
+const newMessage = message.toUpperCase();
+console.log("make Uppercase: ",newMessage);
+
+
+
+// toLowerCase()
+// it change old string 
+const message1 = 'KenoHotath';
+const newMessage1 = message1.toLowerCase();
+console.log("make Uppercase: ",newMessage1);
+```
