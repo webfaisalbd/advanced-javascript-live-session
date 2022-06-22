@@ -623,4 +623,9 @@ console.log("See after pop, array: ", jossArray1);
 
 
 
+// unshift()
+// array er shuru te value add kore, 
+const unshiftArray = [23, 45, 67, 78, 65];
+unshiftArray.unshift(23000);
+console.log('after unshift applied: ', unshiftArray);
 
