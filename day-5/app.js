@@ -617,7 +617,8 @@ console.log("See after push, array: ", jossArray);
 // pop()
 // pop array theke last er value ta remove kore dey and array k change kore dey, mane oi array te jeta remove korse, seta r thakbe na. 
 const jossArray1 = [2, 4, 5, 7, 8, 78];
-jossArray1.pop();
+const popValue = jossArray1.pop();
+console.log('J value ta pop kora hoise: ',popValue);
 console.log("See after pop, array: ", jossArray1);
 
 
@@ -629,3 +630,13 @@ const unshiftArray = [23, 45, 67, 78, 65];
 unshiftArray.unshift(23000);
 console.log('after unshift applied: ', unshiftArray);
 
+
+
+
+
+// shift()
+// array er shuru te value remove kore, 
+const shiftArray = [500, 7, 23, 45, 67, 78, 65];
+const shiftValue = shiftArray.shift();
+console.log('J value ta shift kora hoise: ',shiftValue);
+console.log('after shift applied: ', shiftArray);

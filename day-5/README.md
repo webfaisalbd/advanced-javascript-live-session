@@ -715,6 +715,18 @@ console.log('after unshift applied: ', unshiftArray);
 ```
 
 
+## shift()
+```javascript
+// shift()
+// array er shuru te value remove kore, 
+const shiftArray = [500, 7, 23, 45, 67, 78, 65];
+const shiftValue = shiftArray.shift();
+console.log('J value ta shift kora hoise: ',shiftValue);
+console.log('after shift applied: ', shiftArray);
+
+```
+
+
 ## 
 ```javascript
 
