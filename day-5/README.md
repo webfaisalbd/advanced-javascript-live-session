@@ -693,6 +693,17 @@ console.log("See after push, array: ",jossArray);
 ```
 
 
+## pop()
+```javascript
+// pop()
+// pop array theke last er value ta remove kore dey and array k change kore dey, mane oi array te jeta remove korse, seta r thakbe na. 
+const jossArray1 = [2, 4, 5, 7, 8, 78];
+jossArray1.pop();
+console.log("See after pop, array: ",jossArray1);
+
+```
+
+
 ## 
 ```javascript
 
