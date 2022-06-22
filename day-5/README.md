@@ -671,6 +671,16 @@ console.log('25 value ta array er kon index e ase: ',goodArray.indexOf(25));
 ```
 
 
+## lastIndexOf()
+```javascript
+// lastIndexOf()
+// 23 ase 3bar, but output asbe, last 23 er index ta
+const goodArray1 = [10, 20, 23, 30, 40, 23, 34, 50, 23, 60, 65];
+console.log('last Index of: ', goodArray1.lastIndexOf(23));
+
+```
+
+
 ## 
 ```javascript
 
