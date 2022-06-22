@@ -727,6 +727,42 @@ console.log('after shift applied: ', shiftArray);
 ```
 
 
+## sort()
+```javascript
+[See this blogs: ](https://www.javascripttutorial.net/javascript-array-sort/)
+// sort 
+// sort() without takigng callback function for string sort.
+// number sort er jonno sort() er vitore function dite hobe
+
+// for string sort
+const stringSort = ['jan', 'feb', 'mar', 'apr'];
+console.log('String Sort: ',stringSort.sort());
+
+
+// another way 
+const anotherStringSort = ['Jan', 'Feb', 'Mar', 'Apr'];
+anotherStringSort.sort((a,b)=>{
+    const x = a.toLowerCase();
+    const y = b.toLowerCase();
+    return x == y ? 0 : x > y ? 1 : -1;;
+})
+console.log('string sort ascending order: ',anotherStringSort);
+
+
+
+
+
+const sortArray = [23, 45, 67, 89, 13, 14, 16];
+// for ascending order 
+sortArray.sort((a, b) => a - b);
+console.log('after sorted ascending order array: ', sortArray);
+
+// for descending order 
+sortArray.sort((a, b) => b - a);
+console.log('after sorted descending order array: ', sortArray);
+```
+
+
 ## 
 ```javascript
 

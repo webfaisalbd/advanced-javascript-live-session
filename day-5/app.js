@@ -618,7 +618,7 @@ console.log("See after push, array: ", jossArray);
 // pop array theke last er value ta remove kore dey and array k change kore dey, mane oi array te jeta remove korse, seta r thakbe na. 
 const jossArray1 = [2, 4, 5, 7, 8, 78];
 const popValue = jossArray1.pop();
-console.log('J value ta pop kora hoise: ',popValue);
+console.log('J value ta pop kora hoise: ', popValue);
 console.log("See after pop, array: ", jossArray1);
 
 
@@ -638,5 +638,41 @@ console.log('after unshift applied: ', unshiftArray);
 // array er shuru te value remove kore, 
 const shiftArray = [500, 7, 23, 45, 67, 78, 65];
 const shiftValue = shiftArray.shift();
-console.log('J value ta shift kora hoise: ',shiftValue);
+console.log('J value ta shift kora hoise: ', shiftValue);
 console.log('after shift applied: ', shiftArray);
+
+
+
+
+
+
+// sort 
+// sort() without takigng callback function for string sort.
+// number sort er jonno sort() er vitore function dite hobe
+
+// for string sort
+const stringSort = ['jan', 'feb', 'mar', 'apr'];
+console.log('String Sort: ',stringSort.sort());
+
+
+// another way 
+const anotherStringSort = ['Jan', 'Feb', 'Mar', 'Apr'];
+anotherStringSort.sort((a,b)=>{
+    const x = a.toLowerCase();
+    const y = b.toLowerCase();
+    return x == y ? 0 : x > y ? 1 : -1;;
+})
+console.log('string sort ascending order: ',anotherStringSort);
+
+
+
+
+
+const sortArray = [23, 45, 67, 89, 13, 14, 16];
+// for ascending order 
+sortArray.sort((a, b) => a - b);
+console.log('after sorted ascending order array: ', sortArray);
+
+// for descending order 
+sortArray.sort((a, b) => b - a);
+console.log('after sorted descending order array: ', sortArray);
