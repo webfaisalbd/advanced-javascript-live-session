@@ -553,7 +553,7 @@ niceArrayOfObject.splice(1, 0, {
     title: 'nothing',
     isCompleted: true
 });
-console.log('see object add hoyar por, using splice: ',niceArrayOfObject);
+console.log('see object add hoyar por, using splice: ', niceArrayOfObject);
 
 
 
@@ -565,8 +565,8 @@ console.log('see object add hoyar por, using splice: ',niceArrayOfObject);
 const sweetArray = [10, 20, 30, 40, 50, 60];
 // array theke element kete neyar jonno slice use kora hoy.
 // existing array k change kore na. main array change hoy na.
-console.log('j gula k kete nisi, using slice: ',sweetArray.slice(0,3));
-console.log("Main array(change hoy nai) after slice: ",sweetArray);
+console.log('j gula k kete nisi, using slice: ', sweetArray.slice(0, 3));
+console.log("Main array(change hoy nai) after slice: ", sweetArray);
 
 
 
@@ -577,10 +577,10 @@ console.log("Main array(change hoy nai) after slice: ",sweetArray);
 // array te nai emon kisu indexOf korle, -1 asbe. 
 // jodi same value ekadik bar thake , tahole o indexOf shudu first er index tai dibe. find er moton. Jemon 23 dui bar ase.
 const goodArray = [10, 20, 23, 30, 40, 50, 60, 23, 65];
-console.log('23 value ta array er kon index e ase: ',goodArray.indexOf(23));
+console.log('23 value ta array er kon index e ase: ', goodArray.indexOf(23));
 
 // array te nai emon kisu indexOf korle, -1 asbe.
-console.log('25 value ta array er kon index e ase: ',goodArray.indexOf(25));
+console.log('25 value ta array er kon index e ase: ', goodArray.indexOf(25));
 
 
 // jodi same value ekadik bar thake , tahole o indexOf shudu first er index tai dibe. find er moton.
@@ -596,6 +596,23 @@ console.log('25 value ta array er kon index e ase: ',goodArray.indexOf(25));
 // 23 ase 3bar, but output asbe, last 23 er index ta
 const goodArray1 = [10, 20, 23, 30, 40, 23, 34, 50, 23, 60, 65];
 console.log('last Index of: ', goodArray1.lastIndexOf(23));
+
+
+
+
+
+
+// push()
+// push array theke last e value ta add kore dey and array k change kore dey, mane oi array te jeta add korse, seta o thakbe. 
+const jossArray = [25, 24, 35, 27, 38, 78];
+jossArray.push(100);
+console.log("See after push, array: ",jossArray);
+
+
+
+
+
+
 
 
 

@@ -681,6 +681,18 @@ console.log('last Index of: ', goodArray1.lastIndexOf(23));
 ```
 
 
+## push()
+```javascript
+// push()
+// push array theke last e value ta add kore dey and array k change kore dey, mane oi array te jeta add korse, seta o thakbe. 
+const jossArray = [25, 24, 35, 27, 38, 78];
+jossArray.push(100);
+console.log("See after push, array: ",jossArray);
+
+
+```
+
+
 ## 
 ```javascript
 
