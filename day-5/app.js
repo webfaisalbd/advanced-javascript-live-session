@@ -683,5 +683,25 @@ console.log('after sorted descending order array: ', sortArray);
 // join()
 // array k string banano hobe 
 const numberArray = [22, 14, 36, 27, 88, 19];
-const makeString =  numberArray.join('');
-console.log('array k string banano hobe: ',makeString);
+const makeString = numberArray.join('');
+console.log('array k string banano hobe: ', makeString);
+
+
+
+
+
+// concat()
+// concat new array dey 
+// kintu ager array change kore na
+const numberArray1 = [22, 14, 36, 27, 88, 19];
+const makeConcat = numberArray1.concat(500);
+console.log('after concat: ', makeConcat);
+
+
+
+
+
+
+
+
+
