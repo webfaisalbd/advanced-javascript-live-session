@@ -652,17 +652,17 @@ console.log('after shift applied: ', shiftArray);
 
 // for string sort
 const stringSort = ['jan', 'feb', 'mar', 'apr'];
-console.log('String Sort: ',stringSort.sort());
+console.log('String Sort: ', stringSort.sort());
 
 
 // another way 
 const anotherStringSort = ['Jan', 'Feb', 'Mar', 'Apr'];
-anotherStringSort.sort((a,b)=>{
+anotherStringSort.sort((a, b) => {
     const x = a.toLowerCase();
     const y = b.toLowerCase();
     return x == y ? 0 : x > y ? 1 : -1;;
 })
-console.log('string sort ascending order: ',anotherStringSort);
+console.log('string sort ascending order: ', anotherStringSort);
 
 
 
@@ -676,3 +676,12 @@ console.log('after sorted ascending order array: ', sortArray);
 // for descending order 
 sortArray.sort((a, b) => b - a);
 console.log('after sorted descending order array: ', sortArray);
+
+
+
+
+// join()
+// array k string banano hobe 
+const numberArray = [22, 14, 36, 27, 88, 19];
+const makeString =  numberArray.join('');
+console.log('array k string banano hobe: ',makeString);

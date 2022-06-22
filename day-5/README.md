@@ -763,6 +763,18 @@ console.log('after sorted descending order array: ', sortArray);
 ```
 
 
+## join()
+```javascript
+// join()
+// array k string banano hobe 
+const numberArray = [22, 14, 36, 27, 88, 19];
+const makeString =  numberArray.join('');
+console.log('array k string banano hobe: ',makeString);
+
+```
+
+
+
 ## 
 ```javascript
 
