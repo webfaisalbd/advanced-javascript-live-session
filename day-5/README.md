@@ -789,9 +789,13 @@ console.log('after concat: ', makeConcat);
 
 
 
-## 
+## Array.isArray()
 ```javascript
-
+// Array.isArray() 
+// array hoile true dibe, noile false dibe
+const myArray = [34, 32, 14, 56, 74];
+const checkArray = Array.isArray(myArray);
+console.log('check Array: ',checkArray);
 
 ```
 
